@@ -16,7 +16,15 @@ import spacy
 import matplotlib.pyplot as plt
 import seaborn as sns
 from textblob import TextBlob
-nlp = spacy.load('en_core_web_md') # note changed to using md for better similarity scores
+
+user_input = input("Default library is the medium. Would you like to use the small library instead? [y/n]: ")
+
+if user_input.lower() == "y":
+    print("Loading small library...")
+    nlp = spacy.load('en_core_web_sm')
+else:
+    print("Loading medium library...")    
+    nlp = spacy.load('en_core_web_md')
 
 
 print("Finished imports....")
