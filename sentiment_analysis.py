@@ -9,6 +9,7 @@ Finally it will ask the user for 2 reviews and come back with a similarity score
 print("\nThis program will get the sentiment for a sample set of Amazon reviews\n")
 print("Starting program....")
 
+print("Starting imports....")
 # import
 import pandas as pd
 import spacy
